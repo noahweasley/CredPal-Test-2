@@ -7,4 +7,5 @@ class AppColor {
   static const accent = Colors.redAccent;
   static var coolGrey = Colors.grey;
   static const periwinkleBlue = Color(0xFFd1daff);
+  static const Color softPeriwinkle = Color(0xFFF4F5FE);
 }

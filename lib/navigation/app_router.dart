@@ -1,6 +1,8 @@
+import 'package:credpal_test/domain/bloc/home_bloc.dart';
 import 'package:credpal_test/navigation/app_route_paths.dart';
 import 'package:credpal_test/navigation/app_routes.dart';
 import 'package:credpal_test/screens/home.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 
 class AppRouter {
@@ -11,7 +13,10 @@ class AppRouter {
       GoRoute(
         name: AppRoutes.home,
         path: AppRoutePaths.home,
-        builder: (_, state) => const Home(),
+        builder: (_, state) => BlocProvider(
+          create: (_) => HomeBloc(),
+          child: const Home(),
+        ),
       ),
     ],
   );
