@@ -10,11 +10,6 @@ A new Flutter project.
 
 This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
 For help getting started with Flutter development, view the [online documentation](https://docs.flutter.dev/), which offers tutorials, samples, guidance on mobile development, and a full API reference.
 
 ## Observations and Assumptions
@@ -28,4 +23,29 @@ For help getting started with Flutter development, view the [online documentatio
 - **Navigation with GoRouter**: GoRouter is used for handling navigation, providing a declarative and structured approach to managing routes and deep linking within the app.
 
 - **Asset Management**: Some images in the project aren't being used currently, but it is assumed that they could be utilized when data is fetched dynamically from a REST API. This could involve displaying images based on data received from the API, such as product images or user profiles.
-  
+
+## How to Run and Build the App
+
+### Prerequisites
+
+- Flutter SDK (Latest Stable Version)
+- Android NDK Version: `27.0.12077973`
+- A connected Android device or emulator
+- Run `flutter doctor` to confirm your environment is properly configured
+
+### Run the App
+
+```bash
+git clone <repo_url>
+cd credpal_test-2
+flutter pub get
+flutter run
+```
+
+### Build APK
+
+```bash
+flutter build apk --release
+```
+
+The APK will be available at: build/app/outputs/flutter-apk/app-release.apk
