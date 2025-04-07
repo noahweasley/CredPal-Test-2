@@ -12,6 +12,7 @@ import 'package:credpal_test/widgets/search_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -104,12 +105,36 @@ class TopSection extends StatelessWidget {
           Column(
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
-              const Text(
-                'Shopping limit: ₦0',
-                style: TextStyle(
-                  fontWeight: FontWeight.w500,
-                  fontSize: 12,
-                  color: Color(0xff20294A),
+              Text.rich(
+                TextSpan(
+                  children: [
+                    const TextSpan(
+                      text: 'Shopping limit: ',
+                      style: TextStyle(
+                        fontWeight: FontWeight.w500,
+                        fontSize: 12,
+                        color: Color(0xff20294A),
+                      ),
+                    ),
+                    TextSpan(
+                      text: '₦',
+                      style: GoogleFonts.notoSans(
+                        textStyle: const TextStyle(
+                          fontWeight: FontWeight.bold,
+                          fontSize: 13,
+                          color: Color(0xff20294A),
+                        ),
+                      ),
+                    ),
+                    const TextSpan(
+                      text: ' 0',
+                      style: TextStyle(
+                        fontWeight: FontWeight.w500,
+                        fontSize: 12,
+                        color: Color(0xff20294A),
+                      ),
+                    ),
+                  ],
                 ),
               ),
               const SizedBox(height: Dimensions.space2),

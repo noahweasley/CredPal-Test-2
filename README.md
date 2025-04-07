@@ -15,14 +15,11 @@ For help getting started with Flutter development, view the [online documentatio
 ## Observations and Assumptions
 
 - **Performance**: Flutter generally provides good performance due to its efficient rendering engine. It is important to avoid unnecessary widget rebuilds to keep the app running smoothly.
-
 - **Code Organization**: It's crucial to maintain a clean separation between the UI and business logic. A well-organized code structure improves maintainability and helps the app scale easily.
-
 - **State Management with BLoC**: The app uses BLoC for state management, which helps in separating business logic from the UI, making the app more scalable and testable.
-
 - **Navigation with GoRouter**: GoRouter is used for handling navigation, providing a declarative and structured approach to managing routes and deep linking within the app.
-
-- **Asset Management**: Some images in the project aren't being used currently, but it is assumed that they could be utilized when data is fetched dynamically from a REST API. This could involve displaying images based on data received from the API, such as product images or user profiles.
+- **Asset Management**: Some images in the project aren't being used currently, but it is assumed that they could be utilized when data is fetched dynamically from a REST API. This could involve displaying images based on data received from the API, such as product images or merchants.
+- Merchants would be fetched from an API and can either be active or inactive, hence the green dot at the top right of the merchant, the merchants without the greeen dots are inactive
 
 ## How to Run and Build the App
 

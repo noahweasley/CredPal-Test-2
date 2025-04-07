@@ -97,12 +97,12 @@ class Dummy {
       ),
       Merchant(
         image: 'assets/images/pointek.png',
-        isActive: true,
+        isActive: false,
         name: 'Pointek',
       ),
       Merchant(
         image: 'assets/images/dreamworks.png',
-        isActive: true,
+        isActive: false,
         name: 'Dreamworks',
       ),
       Merchant(
