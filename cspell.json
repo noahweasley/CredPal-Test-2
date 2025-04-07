@@ -1,0 +1,16 @@
+{
+  "ignorePaths": [
+    "cspell.json"
+  ],
+  "flagWords": [
+    "hte",
+    "hate",
+    "fuck"
+  ],
+  "useGitignore": true,
+  "words": [
+    "Avenir",
+    "credpal",
+    "Noto"
+  ]
+}
