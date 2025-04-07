@@ -4,6 +4,8 @@ A new Flutter project.
 
 <img src="assets/screenshots/screenshot.png" alt="App Screenshot" width="300"/>
 
+> Please note the zipped file of the application is in /assets/screenshots folder
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
@@ -26,5 +28,4 @@ For help getting started with Flutter development, view the [online documentatio
 - **Navigation with GoRouter**: GoRouter is used for handling navigation, providing a declarative and structured approach to managing routes and deep linking within the app.
 
 - **Asset Management**: Some images in the project aren't being used currently, but it is assumed that they could be utilized when data is fetched dynamically from a REST API. This could involve displaying images based on data received from the API, such as product images or user profiles.
-
-> Please note that the zipped file of the application is in /assets/screenshots folder
+  
